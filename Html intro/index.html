@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,20 +8,126 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
+
 <body>
     //header,
     <h1>HTML header</h1>
     This is a paragraph.
-    <p>An HTML document is structured using a set of nested tags. Each tag is enclosed within <...> angle brackets and acts as a container for content or other HTML tags.</p>
-    <p style="background-color: rgb(244, 216, 216);">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et debitis facilis ab officia, voluptates illum tempora eius ex impedit. Consequatur.</p>
-    
+    <p>An HTML document is structured using a set of nested tags. Each tag is enclosed within <...> angle brackets and
+            acts as a container for content or other HTML tags.</p>
+    <p style="background-color: rgb(244, 216, 216);">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et
+        debitis facilis ab officia, voluptates illum tempora eius ex impedit. Consequatur.</p>
+    <br>
+
     <h1 style="color: black;">My Bookmarks</h1>
     <h2 style="color: black;">Primary</h2>
     <p><a target="_blank" href="http://www.google.com">Open Google</a></p>
     <p><a target="_blank" href="http://www.youtube.com">Open Youtube</a></p>
     <h2 style="color: black;">Secondary</h2>
     <p><a target="_blank" href="http://www.quora.com">Open Quora</a></p>
+    <br>
 
+    <h2>Image tag:<h3>Visualization of an HTML Document</h3>
+    </h2>
+    <img width="400" height="300" src="image1.png" alt="Visualization of an HTML Document">
+    <br>
 
+    <h2>Table tag: </h2>
+    <table>
+        <caption>Students Details</caption>
+        <tr>
+            <th>Name</th>
+            <th>USN</th>
+            <th>Class</th>
+        </tr>
+        <tr>
+            <td>Joe</td>
+            <td>101</td>
+            <td>CSE A</td>
+        </tr>
+        <tr>
+            <td>Sam</td>
+            <td>145</td>
+            <td rowspan="2">CSE C</td>
+        </tr>
+        <tr>
+            <td>James</td>
+            <td>120</td>
+
+        </tr>
+    </table>
+    <br>
+
+    <h2>list tag:</h2>
+    <ul type="square">
+        <li>Sam</li>
+        <li>James</li>
+        <li>Jack</li>
+    </ul>
+    <ol>
+        <Li>Lily</Li>
+        <Li>James</Li>
+        <Li>Drake</Li>
+    </ol>
+    <br>
+
+    <h2>Forms tags:</h2>
+    <form action="/submit" method="post">
+        <div>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>  
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password"  required>  
+        </div>
+        <div>
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>  
+        </div>
+        <div>
+            <label for="frusel" >Enter your fav fruit</label>
+            <select name="fruits" id="frusel">
+                <option value="select">select option</option>
+                <option value="apple">Apple</option>
+                <option value="banana">Banana</option>
+                <option value="cherry">Cherry</option>
+            </select>
+        </div>
+        <div>
+            <label for="da">Enter date: </label>
+            <input type="date" name="date" id="da">
+        </div>
+        <div>
+            <label for="link">Enter LinkedIn link:</label>
+            <input type="url" id="link" name="link" placeholder="https://example.com" >
+        </div>
+        <div>
+            <label for="vol">Volume: </label>
+            <input type="range" id="vol" name="volume" min="0" max="100" value="25">
+        </div>
+        <div>
+            <label for="filename">Enter a pdf/png file: </label>
+            <input type="file" id="filename" name="filename" accept="image/*,.pdf" multiple>
+            <input type="submit" value="Upload">
+        </div>
+        <div>
+            <Label for="comm">Enter Feedback: </Label><br>
+            <textarea name="comment" id="comm" rows="4" cols="50">
+            Enter your comment here...
+            </textarea>
+        </div>
+        <div>
+            <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+            <label for="subscribe">Subscribe to newsletter</label>
+        </div>
+    
+    <input type="reset" value="Reset">
+    <input type="submit" value="Submit">
+</form>
 </body>
+
 </html>

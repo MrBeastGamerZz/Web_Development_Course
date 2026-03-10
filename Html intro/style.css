@@ -2,3 +2,6 @@ body{
     background-color: rgb(179, 238, 245);
     color: rgb(178, 6, 6);
 }
+td{
+    border: 2px solid black;
+}
