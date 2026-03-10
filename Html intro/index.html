@@ -10,138 +10,169 @@
 </head>
 
 <body>
-    <<!--header-->>
-    <h1>HTML header</h1>
-    This is a paragraph.
-    <p>An HTML document is structured using a set of nested tags. Each tag is enclosed within <...> angle brackets and
-            acts as a container for content or other HTML tags.</p>
-    <p style="background-color: rgb(244, 216, 216);">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et
-        debitis facilis ab officia, voluptates illum tempora eius ex impedit. Consequatur.</p>
-    <br>
+    <header>
+        <h1>My Website</h1>  
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </nav>
+    <aside>
+        <h2>this is under aside tag</h2>
+        <p>key semantic tags you must know: 
+            &lt;header&gt; ,
+            &lt;nav&gt; ,
+            &lt;article&gt; ,
+            &lt;section&gt; ,
+            &lt;aside&gt; ,
+            &lt;footer&gt; ,
+            &lt;figure&gt; & &lt;figcaption&gt; ,
+            &lt;main&gt; ,
+            &lt;time&gt; ,
+        </p>   
+    </aside>
+    <main>
+        <h1>Semantic tags:</h1>
+        <h2>HTML header h1-h6</h2>
+        <section>
+            <p>An HTML document is structured using a set of nested tags. Each tag is enclosed within <...> angle brackets and
+                acts as a container for content or other HTML tags.</p>
+            <p style="background-color: rgb(244, 216, 216);">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et
+                debitis facilis ab officia, voluptates illum tempora eius ex impedit. Consequatur.</p>
+        </section>
+        <article>
+            <figure>
+                <figcaption>Image tag:Visualization of an HTML Document</figcaption>
+                <img width="400" height="300" src="image1.png" alt="Visualization of an HTML Document">
+            </figure>
+            
+        </article>
+        <section>
+            <h2>Table tag: </h2>
+            <table>
+                <caption>Students Details</caption>
+                <tr>
+                    <th>Name</th>
+                    <th>USN</th>
+                    <th>Class</th>
+                </tr>
+                <tr>
+                    <td>Joe</td>
+                    <td>101</td>
+                    <td>CSE A</td>
+                </tr>
+                <tr>
+                    <td>Sam</td>
+                    <td>145</td>
+                    <td rowspan="2">CSE C</td>
+                </tr>
+                <tr>
+                    <td>James</td>
+                    <td>120</td>
+                </tr>
+            </table>
+            <br>
 
-    <h1 style="color: black;">My Bookmarks</h1>
-    <h2 style="color: black;">Primary</h2>
-    <p><a target="_blank" href="http://www.google.com">Open Google</a></p>
-    <p><a target="_blank" href="http://www.youtube.com">Open Youtube</a></p>
-    <h2 style="color: black;">Secondary</h2>
-    <p><a target="_blank" href="http://www.quora.com">Open Quora</a></p>
-    <br>
+            <h2>list tag:</h2>
+            <ul type="square">
+                <li>Sam</li>
+                <li>James</li>
+                <li>Jack</li>
+            </ul>
+            <ol>
+                <Li>Lily</Li>
+                <Li>James</Li>
+                <Li>Drake</Li>
+            </ol>
+        </section>
 
-    <h2>Image tag:<h3>Visualization of an HTML Document</h3>
-    </h2>
-    <img width="400" height="300" src="image1.png" alt="Visualization of an HTML Document">
-    <br>
+        <section>
+            <h2>Forms tags:</h2>
+            <form action="/submit" method="post">
+                <div>
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>  
+                </div>
+                <div>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password"  required>  
+                </div>
+                <div>
+                    <label>Gender:</label>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>  
+                </div>
+                <div>
+                    <label for="frusel" >Enter your fav fruit</label>
+                    <select name="fruits" id="frusel">
+                        <option value="select">select option</option>
+                        <option value="apple">Apple</option>
+                        <option value="banana">Banana</option>
+                        <option value="cherry">Cherry</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="da">Enter date: </label>
+                    <input type="date" name="date" id="da">
+                </div>
+                <div>
+                    <label for="link">Enter LinkedIn link:</label>
+                    <input type="url" id="link" name="link" placeholder="https://example.com" >
+                </div>
+                <div>
+                    <label for="vol">Volume: </label>
+                    <input type="range" id="vol" name="volume" min="0" max="100" value="25">
+                </div>
+                <div>
+                    <label for="filename">Enter a pdf/png file: </label>
+                    <input type="file" id="filename" name="filename" accept="image/*,.pdf" multiple>
+                    <input type="submit" value="Upload">
+                </div>
+                <div>
+                    <Label for="comm">Enter Feedback: </Label><br>
+                    <textarea name="comment" id="comm" rows="4" cols="50">
+                    Enter your comment here...
+                    </textarea>
+                </div>
+                <div>
+                    <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+                    <label for="subscribe">Subscribe to newsletter</label>
+                </div>
+            
+                <input type="reset" value="Reset">
+                <input type="submit" value="Submit">
+            </form>
+            <br>
+        </section>
 
-    <h2>Table tag: </h2>
-    <table>
-        <caption>Students Details</caption>
-        <tr>
-            <th>Name</th>
-            <th>USN</th>
-            <th>Class</th>
-        </tr>
-        <tr>
-            <td>Joe</td>
-            <td>101</td>
-            <td>CSE A</td>
-        </tr>
-        <tr>
-            <td>Sam</td>
-            <td>145</td>
-            <td rowspan="2">CSE C</td>
-        </tr>
-        <tr>
-            <td>James</td>
-            <td>120</td>
+        <section>
+            <h2>Block & Inline elements</h2>
+            <P style="background-color: rgb(235, 223, 9);">i am block elements</P>
+            <span style="background-color: rgb(243, 239, 12);">this is a inline element</span>
+            <br>
 
-        </tr>
-    </table>
-    <br>
+            <h2>ID & Classes:</h2>
+            <div id="firstdiv" class="red">This class red and id id firstdiv </div>
+            <div id="secdiv" >this do not have a class but only id second-div </div>
+            <span class="red">this is also class red</span><br>
+        </section>
+        
+    </main>
+    <footer>
+        <h3 style="color: black;">My Bookmarks</h3>
+        <h4 style="color: black;">Primary:</h4>
+        <p><a target="_blank" href="http://www.google.com">Open Google</a></p>
+        <p><a target="_blank" href="http://www.youtube.com">Open Youtube</a></p>
+        <h4 style="color: black;">Secondary:</h4>
+        <p><a target="_blank" href="http://www.quora.com">Open Quora</a></p>
+        
+        <p>Copyright &copy; WEB DEVELOPMENT COURSE 2026</p>
+    </footer>
 
-    <h2>list tag:</h2>
-    <ul type="square">
-        <li>Sam</li>
-        <li>James</li>
-        <li>Jack</li>
-    </ul>
-    <ol>
-        <Li>Lily</Li>
-        <Li>James</Li>
-        <Li>Drake</Li>
-    </ol>
-    <br>
-
-    <h2>Forms tags:</h2>
-    <form action="/submit" method="post">
-        <div>
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required>  
-        </div>
-        <div>
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password"  required>  
-        </div>
-        <div>
-            <label>Gender:</label>
-            <input type="radio" id="male" name="gender" value="male">
-            <label for="male">Male</label>
-            <input type="radio" id="female" name="gender" value="female">
-            <label for="female">Female</label>  
-        </div>
-        <div>
-            <label for="frusel" >Enter your fav fruit</label>
-            <select name="fruits" id="frusel">
-                <option value="select">select option</option>
-                <option value="apple">Apple</option>
-                <option value="banana">Banana</option>
-                <option value="cherry">Cherry</option>
-            </select>
-        </div>
-        <div>
-            <label for="da">Enter date: </label>
-            <input type="date" name="date" id="da">
-        </div>
-        <div>
-            <label for="link">Enter LinkedIn link:</label>
-            <input type="url" id="link" name="link" placeholder="https://example.com" >
-        </div>
-        <div>
-            <label for="vol">Volume: </label>
-            <input type="range" id="vol" name="volume" min="0" max="100" value="25">
-        </div>
-        <div>
-            <label for="filename">Enter a pdf/png file: </label>
-            <input type="file" id="filename" name="filename" accept="image/*,.pdf" multiple>
-            <input type="submit" value="Upload">
-        </div>
-        <div>
-            <Label for="comm">Enter Feedback: </Label><br>
-            <textarea name="comment" id="comm" rows="4" cols="50">
-            Enter your comment here...
-            </textarea>
-        </div>
-        <div>
-            <input type="checkbox" id="subscribe" name="subscribe" value="yes">
-            <label for="subscribe">Subscribe to newsletter</label>
-        </div>
-    
-        <input type="reset" value="Reset">
-        <input type="submit" value="Submit">
-    </form>
-    <br>
-
-    <h2>Block & Inline elements</h2>
-    <P style="background-color: rgb(235, 223, 9);">i am block elements</P>
-    <span style="background-color: rgb(243, 239, 12);">this is a inline element</span>
-    <br>
-
-    <h2>ID & Classes:</h2>
-    <div id="firstdiv" class="red">This class red and id id firstdiv </div>
-    <div id="secdiv" >this do not have a class but only id second-div </div>
-    <span class="red">this is also class red</span><br>
-
-    <h2>Semantic tags:</h2>
-    
 </body>
 
 </html>
