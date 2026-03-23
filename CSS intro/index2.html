@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --colour:rgb(0, 221, 251);
+            --seccolour:rgb(140, 228, 246);
+            --defpad:25px;
+        }
+        *{
+            padding: 0px;
+            margin: 0;
+        }
+        .nav{
+            background-color: var(--colour);
+            
+        }
+        ul{
+            display: flex;
+            
+        }
+        ul li{
+            list-style: none;
+            padding: var(--defpad);
+            
+        }
+
+        ul li:first-child{
+            --colour:rgb(0, 251, 13);
+            background-color: var(--colour, blue);
+            border: 2px solid var(--seccolour);
+        }
+
+        .container{
+            background-color: var(--seccolour);
+        }
+
+        .box{
+            width: 355px;
+            height: 355px;
+            background-color: aliceblue;
+            padding: 5px;
+            margin: 5px;
+        }
+        .boxes{
+            display: flex;
+        }
+
+
+        @media only screen and (max-width: 455px) {
+            body{
+                background-color: blue;
+            }
+            .boxes{
+                flex-direction: column;
+            }
+          
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>Contacts</li>
+            <li>About</li>
+        </ul>
+    </div>
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, cupiditate quaerat optio fugit perferendis
+            quos quas distinctio commodi, laudantium, aliquid asperiores voluptas sunt ad quam. Ipsam tenetur
+            repellendus obcaecati perferendis eveniet, amet sit minima reiciendis sunt. Aliquam autem enim magni
+            voluptatem quod voluptatibus quo. Eaque omnis perferendis sed deserunt earum!</p>
+    </div>
+    <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>

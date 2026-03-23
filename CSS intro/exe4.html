@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* :root{
+            --colour:red;
+            --seccolour:rgb(243, 150, 150);
+        } */
+        :root {
+            --colour: rgb(51, 255, 0);
+            --seccolour: rgb(0, 0, 0);
+            --tcolour: red;
+            --fcolour: rgb(21, 0, 255);
+        }
+
+        /* :root{
+            --colour:rgb(251, 0, 255);
+            --seccolour:rgb(243, 150, 229);
+        } */
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--seccolour);
+        }
+
+        header {
+            position: sticky;
+            z-index: 10;
+            top: 0;
+        }
+
+        nav {
+            width: 100%;
+            background-color: var(--colour);
+            display: flex;
+            list-style: none;
+            border: 2px solid rgb(255, 251, 0);
+        }
+        a {
+            padding: 20px;
+        }
+
+        .boxes {
+            display: flex;
+            border: 2px solid greenyellow;
+            background-color: var(--colour);
+            margin: 10px 20px 20px 20px ;
+            padding: 15px;
+        }
+        .box1 {
+            width: 355px;
+            height: 355px;
+            background-color: var(--tcolour);
+            padding: 5px;
+            margin: 10px;
+        }
+        .box2 {
+            width: 355px;
+            height: 355px;
+            background-color: var(--fcolour);
+            padding: 5px;
+            margin: 10px;
+        }
+
+        .box {
+            width: 80%;
+            height: 20vh;
+            background-color: var(--colour);
+            padding: 5px;
+            margin: 25px;
+            border-radius: 50px;
+            text-align: center;
+        }
+
+        h3 {
+            padding: 40px;
+            font-size: 50px;
+        }
+        .abc{
+            width: 300px;
+            height: 300px;
+            color: aliceblue;
+
+        }
+        .svg1{
+            position: fixed;
+            top: 645px;
+            right: 1px;
+            
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/">About</a>
+            <a href="/">Contacts</a>
+        </nav>
+    </header>
+
+    <div class="boxes">
+        <div class="box1"></div>
+        <div class="box2"></div>
+    </div>
+
+    <div class="box">
+        <h3>web development</h3>
+    </div>
+    <div class="svg1">
+        <svg height="100" width="100">
+    <circle cx="50" cy="50" r="20" stroke="red" stroke-width="3" fill="red" />
+</svg>
+    </div>
+    <footer>
+        <div class="abc">&copy;&copy;&copy;&copy;&copy;Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente commodi unde atque iusto optio fugiat
+            debitis repellendus? Ex quis nulla excepturi blanditiis hic minus doloremque beatae sed animi officia dolorum
+            voluptatem odit soluta maxime voluptates unde consequatur quaerat reprehenderit, inventore odio voluptatum
+            tempore omnis nam nisi. Expedita, sint unde! Magni dolor repudiandae illo, minima omnis numquam obcaecati cumque
+            sapiente ab aliquid dolores fuga quos dignissimos similique facere eos, sit error vero quae. Eum explicabo
+            asperiores accusamus repudiandae corrupti inventore quisquam, voluptas, laudantium dolorem iusto veritatis
+            obcaecati blanditiis temporibus. Maxime quasi hic consectetur ipsa laudantium voluptate, suscipit ratione cum
+            placeat est!</div>
+        
+    </footer>
+</body>
+
+</html>

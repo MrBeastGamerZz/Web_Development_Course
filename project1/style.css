@@ -1,0 +1,18 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.main{
+    background-image: url(images/IN-en-20260316-TRIFECTA-perspective_789c5633-3949-4708-8e6c-.jpg);
+    height: 80vh;
+    display: flexbox;
+    position: relative;
+}
+.main .box{
+    height: 80vh;
+    width: 100%;
+    opacity: 0.5;
+    background-color: black;
+    position: absolute;
+    top: 0;
+}

@@ -1,3 +1,4 @@
+/* element selector */
 main{
     background-color: rgb(231, 244, 214);
     padding: 10px;
@@ -12,9 +13,11 @@ article{
 ol{
     color: rgb(112, 32, 188);
 }
+/* Id selector */
 #abc{
     color: rgb(2, 167, 182);
 }
+/* class selector */
 .box{
     color: green;
 }

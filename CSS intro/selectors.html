@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Selector</title>
+    <style>
+        /* Element Selector */ 
+        div{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        /* Class Selector */ 
+        .box {
+            border: 5px solid black;
+            margin: 2.5%;
+        }
+        .box1{
+            border-color: blueviolet;
+            color: rgb(4, 132, 2);
+        }
+        .box2{
+            border-color: blue;
+            border-radius: 15px;
+        }
+        /* ID Selector */ 
+        #abc{
+            color: rgb(240, 7, 7);
+            border-color: aqua;
+        }
+        /* Descendent Selector */ 
+        .box span{
+            background-color: rgb(240, 237, 88);
+        }
+        /* Chlid Selector */ 
+        div > p{
+            background-color: rgb(241, 230, 110);
+        }
+         /*  Pseudo Selector */
+        .box2 p:first-child{
+            color: aqua;
+        }
+        
+        /*overflow property*/
+        main > div{
+            border: 5px solid brown;
+            width: 20vw;
+            height: 25vh;
+            overflow: auto;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+
+        
+        
+    </style>
+</head>
+
+<body>
+    <div class="box box1">
+        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, fugiat?</span>
+    </div>
+    <div class="box box2">
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, enim.</p>
+    </div>
+    <div class="box" id="abc">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi iste facere sint, fugiat modi vero!</p>
+    </div>
+
+    <main>
+        <div id="over">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam fugit eaque quia id, obcaecati accusamus, impedit praesentium ipsa soluta pariatur magni at illo sed deserunt iusto sint vitae cupiditate mollitia nobis nostrum neque delectus quibusdam. Quae officia a error beatae enim excepturi quo. Ipsa sunt impedit soluta laboriosam aperiam assumenda consequatur, alias quisquam fugit ex error facilis molestias inventore, rerum dolorum? Suscipit obcaecati magnam expedita quos perspiciatis aliquam nostrum consequuntur aperiam nulla explicabo rem repellendus iusto architecto inventore doloribus tempore ipsa, exercitationem nemo et, consequatur laudantium. Ipsam cum aut itaque odit. Dignissimos repellat placeat possimus architecto doloremque dolore esse consequuntur.
+        </div>
+    </main>
+</body>
+
+</html>
