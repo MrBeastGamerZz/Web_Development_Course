@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            background-color: rgb(108, 212, 247);
+            width: 50vw;
+            height: 40vh;
+            margin: 100px;
+
+        }
+
+        .box {
+            background-color: red;
+            width: 5vw;
+            height: 4vh;
+            transition-property: all;
+            transition-duration: 4s;
+            transition-timing-function: cubic-bezier(1, -0.01, 0.58, 0.98);
+            transition-delay: 1s;
+        }
+
+        .translate {
+            transform: translateX(25vw) translateY(15vh) scale(2);
+            background-color: orange;
+        }
+
+        /* animations */
+        .cont {
+            background-color: aqua;
+            width: 40vw;
+            height: 70vh;
+            margin: 100px;
+        }
+
+        .box1 {
+            background-color: red;
+            width: 50px;
+            height: 50px;
+            animation-name: animations;
+            animation-duration: 4s;
+            animation-iteration-count: 5;
+            animation-timing-function: ease-in-out;
+
+        }
+
+        @keyframes animations {
+            /* from {
+                background-color: red;
+            }
+
+            to {
+                transform: translateX(250px) translateY(100px) scale(1.5);
+                background-color: yellow;
+            } */
+
+            0% {
+                transform: translateX(250px) translateY(100px) scale(1.5);
+            }
+
+            20% {
+                transform: rotate(60deg);
+            }
+
+            50% {
+                transform: rotate(120deg);
+            }
+
+            70% {
+                transform: rotate(270deg);
+            }
+
+            100% {
+                transform: rotate(350deg);
+            }
+        }
+
+
+        .cont1 {
+            /* background-color: rgb(189, 124, 242); */
+            width: 466px;
+            height: 488px;
+            margin-bottom: 50px;
+            border: 2.5px solid;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-image: url(https://imgs.search.brave.com/WizmDVIPq3owQGd-WZSUJBObvgQjHo0s6PRW3Dhd1js/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93d3cu/cG9wc2NpLmNvbS93/cC1jb250ZW50L3Vw/bG9hZHMvMjAyNS8w/My9FbXBlcm9yLVNw/eS1ieS1UaG9tYXMt/VmlqYXlhbi1UaGUt/TmF0dXJlLVBob3Rv/Z3JhcGh5LUNvbnRl/c3QtMjAyNC1QaG90/b2dyYXBoZXItb2Yt/dGhlLVllYXItMjAy/NC5qcGVnP3F1YWxp/dHk9ODU);
+        }
+
+        img {
+            width: 466px;
+            height: 488px;
+            object-fit: cover;
+            object-position: bottom right;
+        }
+
+
+
+        .img1{
+            /* filter: brightness(125%); */
+            /* filter: grayscale(100%); */
+            /* filter: invert(100%); */
+            filter: opacity(0.1);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- transition -->
+    <div class="container">
+        <div class="box translate"></div>
+    </div>
+
+
+    <!-- animations -->
+    <div class="cont">
+        <div class="box1">BOX</div>
+    </div>
+
+    <!-- object-fit & object-cover -->
+    <div class="cont1">
+        <!-- <img src="https://imgs.search.brave.com/WizmDVIPq3owQGd-WZSUJBObvgQjHo0s6PRW3Dhd1js/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93d3cu/cG9wc2NpLmNvbS93/cC1jb250ZW50L3Vw/bG9hZHMvMjAyNS8w/My9FbXBlcm9yLVNw/eS1ieS1UaG9tYXMt/VmlqYXlhbi1UaGUt/TmF0dXJlLVBob3Rv/Z3JhcGh5LUNvbnRl/c3QtMjAyNC1QaG90/b2dyYXBoZXItb2Yt/dGhlLVllYXItMjAy/NC5qcGVnP3F1YWxp/dHk9ODU"
+            alt="nature photo"> -->
+    </div>
+
+    <!-- css filter -->
+    <div>
+        <img src="https://imgs.search.brave.com/inLj_PE3T4f0f5gsnRxQ2AYWEV3m4OLSXul6YjRfJ0U/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzL2FlL2Ez/L2I3L2FlYTNiNzA3/ZDY4OWRiNzEwZWNj/YThkZTNlZmFmNjA4/LmpwZw"
+            alt="" class="img1">
+    </div>
+</body>
+
+</html>
