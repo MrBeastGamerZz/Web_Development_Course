@@ -1,18 +1,33 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
-.main{
-    background-image: url(images/IN-en-20260316-TRIFECTA-perspective_789c5633-3949-4708-8e6c-.jpg);
-    height: 80vh;
+
+.main {
+    background-image: url(images/background.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1100px, 100vw);
+    width: 100%;
+    height: 100vh;
     display: flexbox;
     position: relative;
 }
-.main .box{
-    height: 80vh;
+
+.main .box {
+    height: 10 0vh;
     width: 100%;
     opacity: 0.5;
     background-color: black;
     position: absolute;
     top: 0;
+}
+
+nav {
+    max-width: 80vw;
+    height: 62px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
