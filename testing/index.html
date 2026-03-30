@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First WEB</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+        <h1>Personal Details Form</h1>
+        <div id="hr"><h3>You going to enter your basic data and submit the form. </h3></div>
+  </header> 
+   <nav>
+        <div>
+         <h3>Form:</h3>
+        </div>
+    </nav>  
+   
+    <div>
+        <label for="us">Enter your Username :&nbsp;</label>
+        <input type="text" id="us" name="username" placeholder="enter your username" required>
+    </div>
+    <div>
+        <label for="ps">Enter your Password :&nbsp;</label>
+        <input type="text" id="ps" name="password" placeholder="enter your password" required pattern="[a-zA-Z0-9]+">
+    </div>
+    <div>
+        <label for="el">Enter your Email :&nbsp;</label>
+        <input type="email" id="el" name="username" placeholder="enter your email" required>
+    </div>
+    <div>
+        <label >Your Gender:&nbsp;</label>
+        <input type="radio" id="me" name="gender" value="male">
+        <label for="me">Male</label>
+        <input type="radio" id="fe" name="gender" value="female">
+        <label for="fe">Female</label>
+    </div>
+    <div>
+        <label >Select your favourite(multiply allowed):</label><br>
+        <input type="checkbox" id="sb" name="java" value="yes">
+        <label for="sb">Java</label><br>
+        <input type="checkbox" id="sb" name="python" value="yes">
+        <label for="sb">Python</label><br>
+        <input type="checkbox" id="sb" name="javascript" value="yes">
+        <label for="sb">JavaScript</label><br>
+        <input type="checkbox" id="sb" name="html/css" value="yes">
+        <label for="sb">HTML/CSS</label><br>
+    </div>
+     <div>
+        <label for="sd">Select the date :</label>
+        <input type="date" id="sd" name="date">
+    </div>
+    <div>
+        <label for="abc">Enter your choice :</label>
+      <select name="languages" id="abc">
+      <option value="english"></option>
+      <option value="english">English</option>
+      <option value="kannada">Kannada</option>
+      <option value="hindi">Hindi</option>
+    </select>
+    </div>
+    <div><label for="fi">Choose a file:</label>
+    <input type="file" id="fi" name="file" ></div>
+    <input type="button" onclick="alert('Submited?')" value="Submit" >
+    &nbsp;&nbsp;&nbsp;
+    <input type="button" onclick="alert('Reset!!!')" value="Reset">
+
+</body>
+</html>
