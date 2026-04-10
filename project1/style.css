@@ -11,13 +11,14 @@ body {
 }
 
 .main {
-    background-image: url(images/background.jpg);
+    background-image: url(images/bg-img.jpg);
     width: 100%;
     height: 90vh;
     position: relative;
-    background-position: center center;
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: max(1500px, 100vw);
+    /* background-size: max(100vw, 1500px); */
+    background-size: cover;
 
 }
 
@@ -260,6 +261,14 @@ footer .QA {
     padding: 20px;
 
 }
+
+/* .trending{
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+    
+} */
+
 
 @media screen and (max-width:1300px) {
     .footer {
