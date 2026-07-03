@@ -29,7 +29,7 @@ Web_Development_Course/
 ├── 📄 Html intro/            → HTML fundamentals: tags, elements, forms, structure
 ├── 🎨 CSS intro/             → CSS basics: selectors, box model, colors, layouts
 ├── ⚡ JavaScripts intro/     → JS fundamentals: variables, functions, DOM, events
-├── 🚀 project1/              → First real-world mini project (HTML + CSS + JS)
+├── 🚀 project1/              → First real-world mini project (HTML + CSS)
 ├── 🧪 testing/               → Sandbox: playground for experiments & new ideas
 └── ⚙️  .vscode/               → Editor config for a smooth dev experience
 ```
@@ -65,7 +65,24 @@ Web_Development_Course/
 ### 📌 Project 1 — Mini Web App
 > Located in `/project1`
 
-My first complete project built by combining everything learned in the HTML, CSS, and JavaScript modules. A practical exercise in putting the fundamentals together into something real and functional.
+My first complete project built by combining everything learned in the HTML,& CSS. A practical exercise in putting the fundamentals together into something real and functional.
+
+### 📸 Screenshots
+
+#### web app screenshot 1
+![S1](project1/screenshots/S1.png)
+
+#### web app screenshot 2
+![S2](project1/screenshots/S2.png)
+
+#### web app screenshot 3
+![S3](project1/screenshots/S3.png)
+
+#### web app screenshot 4
+![S4](project1/screenshots/S4.png)
+
+#### web app screenshot 5
+![S5](project1/screenshots/S5.png)
 
 ---
 
@@ -77,7 +94,7 @@ My first complete project built by combining everything learned in the HTML, CSS
 | CSS Basics | ✅ Done |
 | JavaScript Basics | ✅ Done |
 | First Project | ✅ Done |
-| Responsive Design | 🔄 Up Next |
+| Responsive Design | ✅ Done |
 | Advanced JS (ES6+) | ⏳ Planned |
 | Frontend Framework (React) | ⏳ Planned |
 | Deployment & Hosting | ⏳ Planned |
